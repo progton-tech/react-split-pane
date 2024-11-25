@@ -5,6 +5,7 @@ export type Size = string | number;
 export type Split = 'vertical' | 'horizontal';
 
 export type SplitPaneProps = {
+  children?: React.ReactNode;
   allowResize?: boolean;
   className?: string;
   primary?: 'first' | 'second';
@@ -25,7 +26,6 @@ export type SplitPaneProps = {
   pane2Style?: React.CSSProperties;
   resizerClassName?: string;
   step?: number;
-  children?: React.ReactNode;
 };
 
 export type SplitPaneState = {
